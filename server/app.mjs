@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import authRouter from "./controllers/authController.mjs";
+import userRouter from "./controllers/userController.mjs";
 
 const app = express();
 const port = 4000;
@@ -14,6 +15,8 @@ app.use(
 app.use(express.json());
 
 app.use("/auth", authRouter);
+
+app.use("/", userRouter);
 
 app.get("/test", (req, res) => {
   return res.json("Server API is working 🚀");
