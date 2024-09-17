@@ -1,12 +1,12 @@
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import NavbarUser from "./components/NavbarUser";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {
   const navigate = useNavigate();
   return (
     <>
-      <Navbar />
+      <NavbarUser />
       <header className="bg-yellow-400 pt-16 pb-10">
         <div className="container mx-auto px-4 md:px-20 py-5 flex flex-col items-center lg:items-start lg:flex-row lg:justify-between text-center lg:text-left">
           <div className="lg:w-1/2">
