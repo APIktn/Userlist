@@ -1,9 +1,16 @@
+import Footer from "./components/Footer";
+import NavbarUser from "./components/NavbarUser";
+
 function UserListPage() {
   return (
-    <div>
-      <h1>list</h1>
-      <p>a b c</p>
-    </div>
+    <>
+      <NavbarUser />
+      <div>
+        <h1>list</h1>
+        <p>a b c</p>
+      </div>
+      <Footer />
+    </>
   );
 }
 

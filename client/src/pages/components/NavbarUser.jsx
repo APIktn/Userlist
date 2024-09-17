@@ -36,8 +36,8 @@ const NavbarUser = () => {
     return userData.image;
   };
 
-  const handleMenuItemClick = (path) => {
-    navigate(path);
+  const handleMenuItemClick = () => {
+    navigate("/userlist");
     setDropdownOpen(false);
   };
 
@@ -87,7 +87,7 @@ const NavbarUser = () => {
                   <ul className="py-1">
                     <li
                       className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleMenuItemClick("/CustomerInfo")}
+                      onClick={handleMenuItemClick}
                     >
                       ข้อมูลผู้ใช้งาน
                     </li>
