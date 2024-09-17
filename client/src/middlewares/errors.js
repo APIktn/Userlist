@@ -31,7 +31,7 @@ export const updateErrors = (field, value, errors) => {
         newErrors.username =
           "ชื่อผู้ใช้งานไม่ถูกต้อง ต้องประกอบด้วยตัวอักษรภาษาอังกฤษเท่านั้น";
       } else {
-        delete newErrors.firstname;
+        delete newErrors.username;
       }
       break;
     case "email":

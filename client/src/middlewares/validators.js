@@ -71,9 +71,10 @@ export const validateLogin = ({ username, password }) => {
   const errors = {};
 
   if (!username) {
-    errors.username = "กรุณากรอกอีเมล";
+    errors.username = "กรุณากรอกชื่อผู้ใช้งาน";
   } else if (!isValidUsername(username)) {
-    errors.username = "กรุณากรอกอีเมลให้ถูกต้อง";
+    errors.username =
+      "ชื่อผู้ใช้งานไม่ถูกต้อง ต้องประกอบด้วยตัวอักษรภาษาอังกฤษเท่านั้น";
   }
 
   if (!password) {

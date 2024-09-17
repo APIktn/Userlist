@@ -43,7 +43,7 @@ const NavbarUser = () => {
 
   const handleLogout = () => {
     logout();
-    navigate("/login");
+    navigate("/");
     setDropdownOpen(false);
   };
 
