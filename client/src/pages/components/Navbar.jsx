@@ -12,7 +12,7 @@ const Navbar = () => {
           </a>
           <a
             href="/"
-            className="text-yellow-500 pt-1 sm:pt-0 text-lg sm:text-3xl  font-medium"
+            className="text-yellow-500 pt-1 sm:pt-0 text-xl sm:text-3xl  font-medium"
           >
             USERHUB
           </a>
