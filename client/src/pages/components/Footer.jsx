@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Logo from "../../assets/image/logo-cutout.png";
-import Tel_icon from "../../assets/image/Tel_Icon.png";
-import Mail_icon from "../../assets/image/Mail_Icon.png";
+import Tel_icon from "../../assets/image/Tel-Icon.png";
+import Mail_icon from "../../assets/image/Mail-Icon.png";
 import PolicyPopup from "../components/popup/PolicyPopup";
 import TermsPopup from "../components/popup/TermsPopup";
 
