@@ -36,11 +36,6 @@ const NavbarUser = () => {
     return userData.image;
   };
 
-  const handleMenuItemClick = () => {
-    navigate("/userlist");
-    setDropdownOpen(false);
-  };
-
   const handleLogout = () => {
     logout();
     navigate("/");
@@ -83,13 +78,20 @@ const NavbarUser = () => {
                 />
               </button>
               {dropdownOpen && (
-                <div className="absolute right-0 w-48 mt-[140px] bg-white border border-gray-300 rounded shadow-md dropdown-menu z-50">
+                <div className="absolute right-0 w-48 sm:mt-[190px] mt-[181px] bg-white border border-gray-300 rounded shadow-md dropdown-menu z-50">
                   <ul className="py-1">
                     <li
                       className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                      onClick={handleMenuItemClick}
+                      onClick={() => navigate("/")}
                     >
-                      ข้อมูลผู้ใช้งาน
+                      หน้าหลัก
+                    </li>
+                    <hr className="border-t-2 border-gray-300" />
+                    <li
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => navigate("/userlist")}
+                    >
+                      Userhub
                     </li>
                     <hr className="border-t-2 border-gray-300" />
                     <li
