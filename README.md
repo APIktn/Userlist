@@ -16,5 +16,12 @@ npm run start
 
 ---
 
+you can use this account if dont want to register
+
+username : testone
+password : 123456789012
+
+---
+
 Best regards,
 Kittanun Apisitamorn
